@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body
+{
+        padding: 0;
+        margin: 0;
+}
+
+.background
+{
+        position: absolute;
+        background-image: url("background1.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+}
+
+.board
+{
+        background-image: url("block.png");
+        position: absolute;
+        width: 77%;
+        height: 86%;
+        left: 12%;
+        top: 9%;
+        display: grid;
+        grid-template-columns: repeat( 30, 1fr);
+        grid-template-rows: repeat( 20, 1fr);
+}
+
+.score,
+.highscore
+{
+        font-family: 'Patrick Hand', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(255, 187, 0);
+        text-shadow: 3px 0 0 #8B4513, -3px 0 0 #8B4513, 0 3px 0 #8B4513, 0 -3px 0 #8B4513, 2px 2px #8B4513, -2px -2px 0 #8B4513, 2px -2px 0 #8B4513, -2px 2px 0 #8B4513;
+}
+
+.score
+{
+        position: absolute;
+        top: 25%;
+        left: 2%;
+}
+
+.highscore
+{
+        position: absolute;
+        top: 32%;
+        width: 12%;
+        height: 10%;
+}
+
+.head
+{
+        background-image: url("snake-icon.png");
+        width: 34px;
+        height: 34px;
+        transform: scale(2);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.snake-body
+{
+        background-color: rgb(112, 197, 8);
+        border-radius: 50% 50% 50% 50% / 34% 34% 66% 66% ;
+}
+
+.apple
+{
+        width: 34px;
+        height: 34px;
+        background-image: url("food.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.gameover
+{
+        width: 100%;
+        height: 100%;
+        background-image: url("gameover.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
